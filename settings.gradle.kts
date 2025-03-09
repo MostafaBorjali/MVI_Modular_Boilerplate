@@ -52,6 +52,7 @@ applicationList.add("app")
 projectList.add("base")
 projectList.add("integration")
 projectList.add("ui")
+projectList.add("utils")
 
 
 

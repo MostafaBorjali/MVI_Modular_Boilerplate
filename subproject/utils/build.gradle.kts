@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = config.versions.ui.get()
+    namespace = config.versions.utils.get()
     compileSdk = config.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -53,12 +53,5 @@ android {
 ConfigMod(project)
     .commonDependencies()
     .composeDependencies()
-    .debugDependencies()
+    .testDependencies()
 
-
-dependencies {
-    implementation(projects.lang)
-    implementation(projects.strings)
-    implementation(projects.utils)
-    implementation(libs.androidx.constraintlayout)
-}

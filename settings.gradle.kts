@@ -1,5 +1,9 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode.*
+import java.net.URI
+
 pluginManagement {
     repositories {
+        google()
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -11,13 +15,24 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    versionCatalogs {
+        create("config") {
+            from(files("$rootDir/gradle/config.versions.toml"))
+        }
+    }
+    repositoriesMode.set(FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = URI("https://maven.google.com")
+        }
     }
 }
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "MVI_Modular_Boilerplate"
 include(":app")

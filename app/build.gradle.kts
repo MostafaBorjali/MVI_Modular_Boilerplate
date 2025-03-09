@@ -1,52 +1,50 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.compose)
 }
 
 android {
-    namespace = "com.example.mvi"
-    compileSdk = 35
+    namespace = config.versions.app.get()
+    compileSdk = config.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.example.mvi"
-        minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = config.versions.minSdk.get().toInt()
+        targetSdk = config.versions.compileSdk.get().toInt()
+        versionCode = config.versions.versionCode.get().toInt()
+        versionName = config.versions.versionName.get()
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = config.versions.testRunner.get()
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
+            isDebuggable = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile(config.versions.proguardOptimize.get()),
+                config.versions.proguardRulse.get()
             )
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.toVersion(config.versions.javaVersion.get())
+        targetCompatibility = JavaVersion.toVersion(config.versions.javaVersion.get())
     }
+
+
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = config.versions.javaVersion.get()
+    }
+
+    buildFeatures {
+        compose = true
+        buildConfig = true
     }
 }
 
-dependencies {
-
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.compose.bom)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.tooling)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-}
+ConfigMod(project)
+    .commonDependencies()
+    .composeDependencies()
+    .debugDependencies()

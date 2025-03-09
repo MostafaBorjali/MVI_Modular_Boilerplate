@@ -50,6 +50,7 @@ applicationList.add("app")
 
 // sub projects
 projectList.add("base")
+projectList.add("integration")
 
 
 

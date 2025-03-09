@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="logo_splash" type="drawable" />
+
+    <item name="app_name" type="string" />
+</resources>

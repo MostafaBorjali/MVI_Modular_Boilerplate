@@ -36,7 +36,7 @@ dependencyResolutionManagement {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "MVI-Modular-Boilerplate"
-//include(":app")
+
 val applicationList = ArrayList<String>()
 val businessList = ArrayList<String>()
 val projectList = ArrayList<String>()
@@ -51,6 +51,7 @@ applicationList.add("app")
 // sub projects
 projectList.add("base")
 projectList.add("integration")
+projectList.add("ui")
 
 
 

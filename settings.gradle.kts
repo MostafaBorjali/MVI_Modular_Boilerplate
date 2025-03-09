@@ -1,3 +1,4 @@
+@file:Suppress("UnstableApiUsage")
 import org.gradle.api.initialization.resolve.RepositoriesMode.*
 import java.net.URI
 
@@ -34,6 +35,56 @@ dependencyResolutionManagement {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "MVI_Modular_Boilerplate"
-include(":app")
+rootProject.name = "MVI-Modular-Boilerplate"
+//include(":app")
+val applicationList = ArrayList<String>()
+val businessList = ArrayList<String>()
+val projectList = ArrayList<String>()
+
+// application module
+applicationList.add("app")
+
+
+// sub businesses
+
+
+// sub projects
+projectList.add("base")
+
+
+
+for (element in applicationList) {
+    include(":$element")
+}
+
+for (element in businessList) {
+    include(":$element")
+}
+
+for (element in projectList) {
+    include(":$element")
+}
+
+
+for (project in rootProject.children) {
+    //
+    // All application modules must be located in root directory
+    //
+    if (applicationList.contains(project.name)) {
+        project.projectDir = file("$rootDir/${project.name}")
+    }
+    //
+    // All business modules must be located in subbusinesses directory
+    //
+    else if (businessList.contains(project.name)) {
+        project.projectDir = file("subbusinesses/${project.name}")
+    }
+    //
+    // All project modules must be located in subprojects directory
+    //
+    else if (projectList.contains(project.name)) {
+        project.projectDir = file("subprojects/${project.name}")
+    }
+}
+
  

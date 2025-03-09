@@ -6,4 +6,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MVI_Modular_Boilerplate"
+rootProject.name = "MVI-Modular-Boilerplate"

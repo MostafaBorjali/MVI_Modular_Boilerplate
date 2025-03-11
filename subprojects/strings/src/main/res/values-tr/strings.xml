@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="general_popular_destinations">Popüler Varış Noktaları</string>
+    <string name="general_enter">Giriş</string>
+    <string name="general_email">E-Posta</string>
+    <string name="general_login">"Giriş Yap"</string>
+    <string name="general_logout">Çıkış Yap</string>
+    <string name="general_confirm">Onayla</string>
+    <string name="general_continue">Devam et</string>
+    <string name="general_dismiss">İptal</string>
+    <string name="general_warning">Uyarı</string>
+    <string name="general_search">Ara</string>
+    <string name="general_successful">Başarılı</string>
+    <string name="general_failed">Başarısız</string>
+    <string name="general_unknown">Bilinmeyen</string>
+    <string name="general_coverage">Kapsam</string>
+    <string name="general_network">Ağ</string>
+    <string name="general_buy_now">Şimdi satın al</string>
+    <string name="general_buy_new_esim">Yeni eSIM satın al</string>
+    <string name="general_details">Detaylar</string>
+    <string name="general_top_up">Yükleme Yap</string>
+    <string name="general_activate">Aktif et</string>
+    <string name="general_later">Sonra</string>
+    <string name="general_back_to_home">Ana Sayfaya dön</string>
+    <string name="general_some_days">%d Günler</string>
+    <string name="general_days_left">%d Gün Kaldı</string>
+    <string name="general_save">Kaydet</string>
+    <string name="general_share">Paylaş</string>
+    <string name="general_try_again">Yeniden Dene</string>
+    <string name="general_nick_name">takma isim</string>
+    <string name="general_next">Sonraki</string>
+    <string name="general_previous">Önceki</string>
+    <string name="general_error">Hata</string>
+    <string name="general_something_wrong">bir hata oluştu!</string>
+    <string name="general_unknown_error">Bilinmeyen hata</string>
+    <string name="general_connection_error">Bağlantı hatası</string>
+    <string name="general_request_invalid_error">Geçersiz istek hatası</string>
+    <string name="general_internal_server_error">İç sunucu hatası</string>
+    <string name="general_pos_not_active_error">Pos aktif değil!</string>
+    <string name="general_merchant_not_active_error">Satıcı aktif değil!</string>
+
+    <string name="auth_access_token_not_found_error">Kimlik doğrulama erişim jetonu bulunamadı!</string>
+    <string name="auth_access_token_expired_error">Kimlik doğrulama erişim jetonunun süresi doldu!</string>
+    <string name="auth_refresh_token_not_found_error">Kimlik yenileme jetonu bulunamadı!</string>
+
+    <string name="intro_text_title">Yurtdışında yerel veri ücreti ile bağlantıda kalın!</string>
+    <string name="intro_text_description">\n Küresel Kapsam\n tasarruf sağlayan Mobil veri Esnek veri planları.\n</string>
+    <string name="intro_lets_go_button_title">Hadi başlayalım</string>
+    <string name="select_lang_text_title">Dilinizi Seçin</string>
+    <string name="select_lang_text_description">Seçiminizi daha sonra profilinizden değiştirebilirsiniz.</string>
+
+    <string name="login_title_login">Giriş Yap / Kayıt Ol</string>
+    <string name="login_title_login_with_other">Ya da ile giriş yap</string>
+    <string name="login_title_verification">Doğrulama Kodunu Giriniz</string>
+    <string name="login_description_verification">E-Posta adresinize (%s) gönderilen 5 haneli doğrulama kodunuzu giriniz.</string>
+    <string name="login_verification_code_resend_time">%s içinde yeniden gönder.</string>
+    <string name="login_verification_code_resend_code">Kodu yeniden gönder</string>
+
+    <string name="home_my_esim_title">ESIM\'im</string>
+    <string name="home_shop_title">Alışverış</string>
+    <string name="home_profile_title">Profil</string>
+    <string name="home_esim_buy_esim">ESIM satın al</string>
+    <string name="home_esim_add_esim">eSIM ekle</string>
+    <string name="home_esim_special_offers_esim">için özel teklifler %S</string>
+    <string name="home_esim_assign_esim_bottom_sheet_title">Kodu girin</string>
+    <string name="home_esim_assign_esim_bottom_sheet_body">Aldiğiniz paylaşım kodunu girin.</string>
+    <string name="home_esim_assign_esim_share_id">Paylaşım Kimliği</string>
+    <string name="home_esim_expired_esim_badge">SÜRESİ DOLDU</string>
+    <string name="home_esim_no_esim_hint_title">eSIM\'inizi satın aldıktan ve yükledikten sonra, veri planlarınızı hemen kullanmaya başlayabilirsiniz.</string>
+    <string name="home_esim_no_esim_hint_step_one">Gideceğiniz yeri seçin.</string>
+    <string name="home_esim_no_esim_hint_step_two">Paketinizi seçin ve eSIM\'inizi satın alın.</string>
+    <string name="home_esim_no_esim_hint_step_three">eSIM\'inizi etkinleştirin ve keyfini çıkarın.</string>
+    <string name="home_esim_add_esim_message_success">eSIM\'iniz başarıyla eklendi.</string>
+
+    <string name="home_profile_my_esims">eSIM\'lerim</string>
+    <string name="home_profile_my_packages">Paketlerim</string>
+    <string name="home_profile_transactions">İşlemler</string>
+    <string name="home_profile_group_purchase">Grup alımı</string>
+    <string name="home_profile_languages">Diller</string>
+    <string name="home_profile_support">Destek</string>
+    <string name="home_profile_about_us">Hakkımızda</string>
+    <string name="home_profile_delete_account">Hesabı Sil</string>
+    <string name="home_profile_delete_account_message">Tüm eSIM\'lernız ve işlem geçmişiniz silinecek! Devam etmek istediğinizden emin misiniz?</string>
+    <string name="home_profile_exit_account">Hesaptan çıkış</string>
+    <string name="home_profile_login_title">lütfen profilin tamamını görmek için giriş yapınız.</string>
+    <string name="home_profile_login_title_place_holder">giriş yapınız</string>
+    <string name="home_profile_change_server">Sunucuyu Değiştir</string>
+    <string name="home_profile_logout_message">Emin misiniz?</string>
+    <string name="home_profile_change_server_title">Sunucuyu Değiştir</string>
+    <string name="home_profile_change_server_description">Sunucuyu değiştirmek üzeresiniz, emin misiniz?</string>
+    <string name="home_shop_all_countries_title">Tüm Ülkeler</string>
+    <string name="home_shop_popular_card_data_only_title">Yalnızca veri eSIM</string>
+
+    <string name="my_esim_title">eSIM\'lerim</string>
+    <string name="my_esim_active">Aktif</string>
+    <string name="my_esim_expired">Süresi dolmuş</string>
+    <string name="my_esim_empty_expired">Süresi dolmuş eSIM\'iniz yok.</string>
+    <string name="my_esim_empty_active">Aktif bir eSIM\'iniz yok.</string>
+    <string name="my_esim_menu_item_top_up">Yükleme yap</string>
+    <string name="my_esim_menu_item_share">Paylaş</string>
+    <string name="my_esim_menu_item_rename">Yeniden adlandır</string>
+    <string name="my_esim_details_title">Detaylar</string>
+    <string name="my_esim_details_data">Veri %s</string>
+    <string name="my_esim_details_duration">Süre: %s Günler</string>
+    <string name="my_esim_details_start_date">Başlangıç tarihi:</string>
+    <string name="my_esim_details_end_date">Bitiş tarihi:</string>
+    <string name="my_esim_details_packages_title">Paketler</string>
+    <string name="my_esim_details_active_packages_title">Aktif Paketlerim</string>
+    <string name="my_esim_details_activation_guide">Aktivasyon Rehberi</string>
+    <string name="my_esim_share_bottom_sheet_title">Bu eSİM için bir takma isim düzenle sonra başkalarıya paylaş.</string>
+    <string name="my_esim_details_new_package_hint_1">Yeni paket mevcut paket bittikten sonra başlayacaktır.</string>
+    <string name="my_esim_details_new_package_hint_2">Birden fazla paketiniz varsa, eSİM\'inizin son kullanma tarihi en uzun pakete göre hesaplanacaktır.</string>
+
+    <string name="home_esim_card_remaining_title">Kalan Veri</string>
+    <string name="home_esim_card_expired_title">Süresi dolmuş</string>
+    <string name="home_esim_card_expires_in_title">Süresi doluyor</string>
+    <string name="home_esim_iccid_title">ICCID: %1$s</string>
+    <string name="home_esim_popular_card_see_plan_title">Paketleri Gör ></string>
+    <string name="home_esim_card_group_purchase_title">Grup alımı</string>
+    <string name="home_esim_card_esim_number_title">eSİM numaraları</string>
+
+    <string name="plan_esim_initial_package">Ilk paket</string>
+    <string name="plan_esim_plan_type">Plan Türü</string>
+    <string name="plan_esim_data_only">Sadece veri</string>
+    <string name="plan_esim_view_details">Detayları gör</string>
+    <string name="plan_esim_details_title">eSIM Detayları</string>
+    <string name="plan_esim_group_report_title">Satın alımı başarılı</string>
+    <string name="plan_esim_group_report_body_header">Lütfen bekleyin,eSİM\'inizin sorununu anlamaya çalışıyoruz…(%s/%s)</string>
+    <string name="plan_esim_report_what_next_title">Sırada ne var?</string>
+    <string name="plan_esim_report_step_one">Aktivasyon yönteminizi seçin.</string>
+    <string name="plan_esim_report_step_two">Adım adım rehberi izleyin.</string>
+    <string name="plan_esim_report_step_three">eSIM\'inizi etkinleştirin ve keyfini çıkarın.</string>
+    <string name="plan_esim_report_hint">Önemli: eSIM\'ler telefon numaralarıyla birlikte gelmez. Operatör dolaşım ücretlerinden kaçınmak için birincil SIM\'iniz için Veri Dolaşımını kapattığınızdan emin olun.</string>
+    <string name="plan_esim_report_hint_placeholder">Önemli:</string>
+
+    <string name="plan_topup_list_description">Lütfen eSIM\'iniz için veri paketi seçin.</string>
+    <string name="plan_topup_checkout_message">Yalnız seyahat etmiyorsanız, seyahat arkadaşlarınız için tek bir satın alma işleminde 10 adede kadar eSIM satın alabilirsiniz.</string>
+    <string name="plan_topup_checkout_title">Ödeme Yap</string>
+    <string name="plan_topup_checkout_data_key">Veri</string>
+    <string name="plan_topup_checkout_duration_key">Süre</string>
+    <string name="plan_topup_checkout_esim_name_key">eSIM İsmi</string>
+    <string name="plan_topup_checkout_package_type_key">Paket türü</string>
+    <string name="plan_topup_popular_card_data_package_title">Veri Paketi</string>
+    <string name="plan_topup_report_title">Ödeme başarılı</string>
+    <string name="plan_topup_report_return">Geri dön</string>
+
+    <string name="group_purchased_title">Grup alımı</string>
+    <string name="group_purchased_empty_state">Hiçbir grubunuz yok.</string>
+    <string name="group_purchased_button_title">Yeni alım</string>
+    <string name="group_edit_bottom_sheet_title">Bu Grup için bir takma isim düzenle sonra başkalarıya paylaş.</string>
+    <string name="group_plan_list_group_purchase">Grup alımı</string>
+    <string name="group_plan_details_title">Satın alma detayları</string>
+    <string name="group_top_up_plan_screen_title">"için yükleme yap:"</string>
+    <string name="group_purchase_plan_bottom_sheet_hint">eSim Sayısını Girin</string>
+    <string name="group_report_list_item_iccid">ICCID: %s</string>
+    <string name="group_top_up_plan_bottom_sheet_title">Lütfen yükleme yapmak için eSIM leri seç.</string>
+    <string name="group_top_up_plan_bottom_sheet_select">Hepsini seç</string>
+    <string name="group_share_qr_title">Esim aktivasiyonunu paylaş</string>
+    <string name="group_share_esim_content">llütfen eSİM\'inizi eklemek için aşağıdaki bağlantıyı veya aktivasyon kodunu kullanın:
+Aktivasyon kodu: %s
+Aktivasyon bağlantısı: %s</string>
+
+    <string name="transaction_title">İşlemler</string>
+    <string name="transaction_order_number_title">Sipariş Numarası</string>
+    <string name="transaction_date_title">Tarih</string>
+    <string name="transaction_price_title">Fiyat</string>
+    <string name="transaction_inquiry_title">sorgulama</string>
+    <string name="transaction_esim_title">eSIM</string>
+    <string name="transaction_no_transaction_found">Herhangi bir işleminiz yok.</string>
+
+    <string name="activation_title">Aktivasyon</string>
+    <string name="activation_tab_direct">Direkt</string>
+    <string name="activation_tab_qr_scan">QR Tara</string>
+    <string name="activation_tab_manual">Klavuz</string>
+    <string name="activation_note_title">Lütfen dikkat</string>
+    <string name="activation_note_first">Bir kez yüklendiğinde, çoğu eSİM çıkarıldığından tekrar yüklenemez.</string>
+    <string name="activation_note_second">eSIM aktivasyonu sırasında cihazınızı çevrimiçi tutun.</string>
+    <string name="activation_smdp_address_title">SM-DP+ ADRESİ</string>
+    <string name="activation_code_title">AKTİVASYON KODU</string>
+    <string name="activation_direct_button_text">Rehberi izleyin ve şimdi etkinleştirin</string>
+    <string name="activation_manual_button_text">Adım adım rehberi izleyin</string>
+    <string name="activation_copied_to_the_clipboard">Panoya kopyalandı</string>
+    <string name="activation_share_qr_title">Esim Aktivasyon QR\'ını Paylaş</string>
+    <string name="activation_save_qr_successful_message">QR galeriye başarıyla kaydedildi.</string>
+    <string name="activation_save_qr_error_message">QR kodu kaydederken bir sorun oluştu.</string>
+    <string name="activation_storage_permission_error">QR kodu galeriye kaydetmek için depolama izni gerekir.</string>
+    <string name="activation_guide_select_your_device_title">Cihazınızı seçin</string>
+
+</resources>

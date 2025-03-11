@@ -7,7 +7,7 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
-              <build path="$PROJECT_DIR$/buildSrc" name="MVI_Modular_Boilerplate">
+              <build path="$PROJECT_DIR$/buildSrc" name="MVI-Modular-Boilerplate">
                 <projects>
                   <project path="$PROJECT_DIR$/buildSrc" />
                 </projects>
@@ -23,6 +23,24 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/subprojects/auth" />
+            <option value="$PROJECT_DIR$/subprojects/barcode" />
+            <option value="$PROJECT_DIR$/subprojects/base" />
+            <option value="$PROJECT_DIR$/subprojects/crashlytics" />
+            <option value="$PROJECT_DIR$/subprojects/deeplink" />
+            <option value="$PROJECT_DIR$/subprojects/error" />
+            <option value="$PROJECT_DIR$/subprojects/esim" />
+            <option value="$PROJECT_DIR$/subprojects/guide" />
+            <option value="$PROJECT_DIR$/subprojects/integration" />
+            <option value="$PROJECT_DIR$/subprojects/lang" />
+            <option value="$PROJECT_DIR$/subprojects/navigation" />
+            <option value="$PROJECT_DIR$/subprojects/network" />
+            <option value="$PROJECT_DIR$/subprojects/notification" />
+            <option value="$PROJECT_DIR$/subprojects/persist" />
+            <option value="$PROJECT_DIR$/subprojects/strings" />
+            <option value="$PROJECT_DIR$/subprojects/ui" />
+            <option value="$PROJECT_DIR$/subprojects/user" />
+            <option value="$PROJECT_DIR$/subprojects/utils" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

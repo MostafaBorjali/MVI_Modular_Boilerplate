@@ -46,12 +46,23 @@ applicationList.add("app")
 
 
 // sub businesses
-
+businessList.add("intro")
 
 // sub projects
+projectList.add("auth")
 projectList.add("base")
+projectList.add("crashlytics")
+projectList.add("deeplink")
+projectList.add("error")
 projectList.add("integration")
+projectList.add("lang")
+projectList.add("navigation")
+projectList.add("network")
+projectList.add("notification")
+projectList.add("persist")
+projectList.add("strings")
 projectList.add("ui")
+projectList.add("user")
 projectList.add("utils")
 
 

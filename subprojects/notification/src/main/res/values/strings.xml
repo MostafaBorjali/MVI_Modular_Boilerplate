@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ammotel_notification_channel_id">Ammotel Channel</string>
+    <string name="ammotel_notification_channel_name">Ammotel Notification Channel</string>
+    <string name="ammotel_notification_channel_description">This channel used to received Ammotel notifications</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <item name="app_name" type="string" tools:ignore="MissingTranslation" />
+    <item name="login_description_login" type="string" tools:ignore="MissingTranslation" />
+    <item name="plan_esim_report_title" type="string" tools:ignore="MissingTranslation" />
+</resources>

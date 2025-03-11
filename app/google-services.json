@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343301847554",
+    "project_id": "mvimodular-d1cff",
+    "storage_bucket": "mvimodular-d1cff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343301847664:android:95a6e088d1bb78532552b5",
+        "android_client_info": {
+          "package_name": "com.mvi.module"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKr4WREk-CNZwItZR63lIluCL0EF8DGG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

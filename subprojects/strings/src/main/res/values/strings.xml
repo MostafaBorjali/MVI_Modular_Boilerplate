@@ -1,0 +1,206 @@
+<resources>
+
+
+    <string name="general_popular_destinations">"Popular Destinations"</string>
+    <string name="general_enter">"Enter"</string>
+    <string name="general_email">"Email"</string>
+    <string name="general_login">"Login"</string>
+    <string name="general_logout">"Logout"</string>
+    <string name="general_confirm">"Confirm"</string>
+    <string name="general_continue">"Continue"</string>
+    <string name="general_dismiss">"Dismiss"</string>
+    <string name="general_warning">"Warning"</string>
+    <string name="general_search">"Search"</string>
+    <string name="general_successful">"Successful"</string>
+    <string name="general_failed">"Failed"</string>
+    <string name="general_unknown">"Unknown"</string>
+    <string name="general_coverage">"Coverage"</string>
+    <string name="general_network">"Network"</string>
+    <string name="general_buy_now">"Buy now"</string>
+    <string name="general_buy_new_esim">"Buy new eSIM"</string>
+    <string name="general_details">"Details"</string>
+    <string name="general_top_up">"Top Up"</string>
+    <string name="general_activate">"Activate"</string>
+    <string name="general_later">"Later"</string>
+    <string name="general_back_to_home">"Back to Home"</string>
+    <string name="general_some_days">"%d Days"</string>
+    <string name="general_days_left">"%d Days Left"</string>
+    <string name="general_save">"Save"</string>
+    <string name="general_share">"Share"</string>
+    <string name="general_try_again">"Try Again"</string>
+    <string name="general_next">"Next"</string>
+    <string name="general_nick_name">"Nick Name"</string>
+    <string name="general_previous">"Prev"</string>
+
+
+    <string name="general_error">"Error"</string>
+    <string name="general_something_wrong">"Something went wrong!"</string>
+    <string name="general_unknown_error">"Unknown error"</string>
+    <string name="general_connection_error">"Connection error"</string>
+    <string name="general_request_invalid_error">"Invalid request error"</string>
+    <string name="general_internal_server_error">"Internal server error"</string>
+    <string name="general_pos_not_active_error">"Pos not active!"</string>
+    <string name="general_merchant_not_active_error">"Merchant not active!"</string>
+
+    <string name="auth_access_token_not_found_error">"Authentication access token not found!"</string>
+    <string name="auth_access_token_expired_error">"Authentication access token expired!"</string>
+    <string name="auth_refresh_token_not_found_error">"Authentication refresh token not found!"</string>
+
+    <string name="intro_text_title">"Stay connected abroad with local Data fee!"</string>
+    <string name="intro_text_description">
+        """
+        Global Coverage
+        Money-saving mobile traffic
+        Flexible Data Plans
+        """
+    </string>
+    <string name="intro_lets_go_button_title">"Let's go"</string>
+
+    <string name="select_lang_text_title">"Select your Language"</string>
+    <string name="select_lang_text_description">"You can change your choice from your profile later."</string>
+
+    <string name="login_title_login">"Login/Register"</string>
+    <string name="login_title_login_with_other">"or login with"</string>
+    <string name="login_title_verification">"Enter Verification Code"</string>
+    <string name="login_description_verification">"Please enter the 5-Digit code that sent to %s Email address."</string>
+    <string name="login_verification_code_resend_time">"Resend in %s"</string>
+    <string name="login_verification_code_resend_code">"Resend code"</string>
+
+    <string name="home_my_esim_title">"My ESIM"</string>
+    <string name="home_shop_title">"Shop"</string>
+    <string name="home_profile_title">"Profile"</string>
+
+    <string name="home_esim_buy_esim">"BUY ESIM"</string>
+    <string name="home_esim_add_esim">"ADD ESIM"</string>
+    <string name="home_esim_special_offers_esim">"Special offers for %S"</string>
+    <string name="home_esim_assign_esim_bottom_sheet_title">"Enter code"</string>
+    <string name="home_esim_assign_esim_bottom_sheet_body">"Please enter the share code that you received."</string>
+    <string name="home_esim_assign_esim_share_id">"Share Id"</string>
+    <string name="home_esim_expired_esim_badge">"EXPIRED"</string>
+    <string name="home_esim_no_esim_hint_title">"After buying and install your eSIM, You can start using your data plans right away."</string>
+    <string name="home_esim_no_esim_hint_step_one">"Select your destination."</string>
+    <string name="home_esim_no_esim_hint_step_two">"Select your package and buy your eSIM."</string>
+    <string name="home_esim_no_esim_hint_step_three">"Activate your eSIM and enjoy."</string>
+    <string name="home_esim_add_esim_message_success">"Your eSIM has been successfully added."</string>
+
+    <string name="home_profile_my_esims">"My eSIMs"</string>
+    <string name="home_profile_my_packages">"My Packages"</string>
+    <string name="home_profile_transactions">"Transactions"</string>
+    <string name="home_profile_group_purchase">"Group Purchase"</string>
+    <string name="home_profile_languages">"Languages"</string>
+    <string name="home_profile_support">"Support"</string>
+    <string name="home_profile_about_us">"About us"</string>
+    <string name="home_profile_delete_account">"Delete Account"</string>
+    <string name="home_profile_exit_account">"Exit Account"</string>
+    <string name="home_profile_login_title">"Please Login to view full profile."</string>
+    <string name="home_profile_login_title_place_holder">Login</string>
+    <string name="home_profile_change_server">"Change Server"</string>
+    <string name="home_profile_logout_message">"Are you sure?"</string>
+    <string name="home_profile_change_server_title">"Change Server"</string>
+    <string name="home_profile_change_server_description">"You are about to change server, Are you sure?"</string>
+
+    <string name="home_shop_all_countries_title">"All Countries"</string>
+    <string name="home_shop_popular_card_data_only_title">"Data only eSIM"</string>
+
+
+    <string name="my_esim_title">"My eSIMs"</string>
+    <string name="my_esim_active">"Active"</string>
+    <string name="my_esim_expired">"Expired"</string>
+    <string name="my_esim_empty_expired">"You don’t have any expired eSIMS."</string>
+    <string name="my_esim_empty_active">"You don’t have any active eSIMS."</string>
+    <string name="my_esim_menu_item_top_up">"Top up"</string>
+    <string name="my_esim_menu_item_share">"Share"</string>
+    <string name="my_esim_menu_item_rename">"Rename"</string>
+
+    <string name="my_esim_details_title">"Details"</string>
+    <string name="my_esim_details_data">"Data: %s"</string>
+    <string name="my_esim_details_duration">"Duration: %s Days"</string>
+    <string name="my_esim_details_start_date">"Start date:"</string>
+    <string name="my_esim_details_end_date">"End date:"</string>
+    <string name="my_esim_details_packages_title">"Packages"</string>
+    <string name="my_esim_details_active_packages_title">"Active Packages"</string>
+    <string name="my_esim_details_activation_guide">"Activation guide"</string>
+    <string name="my_esim_share_bottom_sheet_title">"Set a nickname for this eSIM then share it with others."</string>
+    <string name="my_esim_details_new_package_hint_1">"new package will start after the current package was finished."</string>
+    <string name="my_esim_details_new_package_hint_2">"If you have more than one package, your eSIM expiration will be calculated based on the longest package."</string>
+
+    <string name="home_esim_card_remaining_title">"Remaining Data"</string>
+    <string name="home_esim_card_expired_title">"Expired"</string>
+    <string name="home_esim_card_expires_in_title">"Expires in"</string>
+    <string name="home_esim_iccid_title">"ICCID: %1$s"</string>
+    <string name="home_esim_popular_card_see_plan_title">"See Plans >"</string>
+    <string name="home_esim_card_group_purchase_title">"Group Purchase"</string>
+    <string name="home_esim_card_esim_number_title">"eSIM numbers"</string>
+
+    <string name="plan_esim_initial_package">"Initial package"</string>
+    <string name="plan_esim_plan_type">"Plan type"</string>
+    <string name="plan_esim_data_only">"Data only"</string>
+    <string name="plan_esim_view_details">"View Details"</string>
+    <string name="plan_esim_details_title">"eSIM Details"</string>
+
+    <string name="plan_esim_group_report_title">"Purchase Successful"</string>
+    <string name="plan_esim_group_report_body_header">"Please wait, We are getting your eSIMs issue… (%s/%s)"</string>
+    <string name="plan_esim_report_what_next_title">"What’s Next?"</string>
+    <string name="plan_esim_report_step_one">"Select your Activation method."</string>
+    <string name="plan_esim_report_step_two">"Watch the step by step guide."</string>
+    <string name="plan_esim_report_step_three">"Activate your eSIM and enjoy."</string>
+    <string name="plan_esim_report_hint">"Important: eSIMs do not come with phone numbers. Make sure to turn off Data Roaming for your primary SIM to avoid carrier roaming charges."</string>
+    <string name="plan_esim_report_hint_placeholder">"Important:"</string>
+
+    <string name="plan_topup_list_description">"Please Select on data package for you eSIM."</string>
+    <string name="plan_topup_checkout_message">"If you are not traveling alone, You can buy up to 10 eSIMs in one purchase for your fellow travelers."</string>
+    <string name="plan_topup_checkout_title">"Checkout"</string>
+    <string name="plan_topup_checkout_data_key">"Data"</string>
+    <string name="plan_topup_checkout_duration_key">"Duration"</string>
+    <string name="plan_topup_checkout_esim_name_key">"eSIM name"</string>
+    <string name="plan_topup_checkout_package_type_key">"Package type"</string>
+    <string name="plan_topup_popular_card_data_package_title">"Data Package"</string>
+
+    <string name="plan_topup_report_title">"Payment successful"</string>
+    <string name="plan_topup_report_return">"Return"</string>
+
+    <string name="group_purchased_title">"Group purchase"</string>
+    <string name="group_purchased_empty_state">"You don’t have any Groups."</string>
+    <string name="group_purchased_button_title">"New Purchase"</string>
+    <string name="group_edit_bottom_sheet_title">"Set a nickname for this group then share it with others."</string>
+    <string name="group_plan_list_group_purchase">"Group purchase"</string>
+    <string name="group_plan_details_title">"Purchase Details"</string>
+    <string name="group_top_up_plan_screen_title">"Top Up for:"</string>
+    <string name="group_top_up_plan_bottom_sheet_title">"Please Select eSIMs for top up."</string>
+    <string name="group_top_up_plan_bottom_sheet_select">"Select All"</string>
+    <string name="group_purchase_plan_bottom_sheet_hint">"Enter eSim Count"</string>
+    <string name="group_report_list_item_iccid">"ICCID: %s"</string>
+    <string name="group_share_qr_title">"Share Esim Activation"</string>
+
+    <string name="group_share_esim_content">"Please use the following link or activation code to add your ESIM:
+ Activation Code: %s
+ Activation Link: %s"</string>
+
+    <string name="transaction_title">"Transactions"</string>
+    <string name="transaction_order_number_title">"Order Number"</string>
+    <string name="transaction_date_title">"Date"</string>
+    <string name="transaction_price_title">"Price"</string>
+    <string name="transaction_inquiry_title">"inquiry"</string>
+    <string name="transaction_esim_title">"eSIM"</string>
+    <string name="transaction_no_transaction_found">"You don’t have any transaction."</string>
+
+    <string name="activation_title">"Activation"</string>
+    <string name="activation_tab_direct">"Direct"</string>
+    <string name="activation_tab_qr_scan">"QR Scan"</string>
+    <string name="activation_tab_manual">"Manual"</string>
+    <string name="activation_note_title">"Please note"</string>
+    <string name="activation_note_first">"Once installed, most eSIMs cannot be reinstalled if removed."</string>
+    <string name="activation_note_second">"Keep your device online during eSIM activation."</string>
+    <string name="activation_smdp_address_title">"SM-DP+ ADDRESS"</string>
+    <string name="activation_code_title">""ACTIVATION CODE""</string>
+    <string name="activation_direct_button_text">"Watch guide and activate now"</string>
+    <string name="activation_manual_button_text">"Watch step by step guide"</string>
+    <string name="activation_copied_to_the_clipboard">"copied to the clipboard"</string>
+    <string name="activation_share_qr_title">"Share Esim Activation QR"</string>
+    <string name="activation_save_qr_successful_message">"The QR has been successfully saved in the gallery."</string>
+    <string name="activation_save_qr_error_message">"There was a problem saving the QR."</string>
+    <string name="activation_storage_permission_error">"Save QR to gallery needs storage permission."</string>
+    <string name="activation_guide_select_your_device_title">"Select your device"</string>
+    <string name="home_profile_delete_account_message">All of your eSIMs and transaction history will be deleted! Are you sure you want to proceed?</string>
+
+</resources>

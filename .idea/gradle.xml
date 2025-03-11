@@ -23,14 +23,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/subbusinesses/intro" />
             <option value="$PROJECT_DIR$/subprojects/auth" />
-            <option value="$PROJECT_DIR$/subprojects/barcode" />
             <option value="$PROJECT_DIR$/subprojects/base" />
             <option value="$PROJECT_DIR$/subprojects/crashlytics" />
             <option value="$PROJECT_DIR$/subprojects/deeplink" />
             <option value="$PROJECT_DIR$/subprojects/error" />
-            <option value="$PROJECT_DIR$/subprojects/esim" />
-            <option value="$PROJECT_DIR$/subprojects/guide" />
             <option value="$PROJECT_DIR$/subprojects/integration" />
             <option value="$PROJECT_DIR$/subprojects/lang" />
             <option value="$PROJECT_DIR$/subprojects/navigation" />

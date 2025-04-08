@@ -1,6 +1,7 @@
 package com.mvi.modular.user.service
 
 import com.mvi.modular.base.functional.Either
+import com.mvi.modular.error.domain.model.Error
 import com.mvi.modular.user.domain.model.UserInfo
 
 

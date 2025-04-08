@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/subbusinesses/home" />
             <option value="$PROJECT_DIR$/subbusinesses/intro" />
             <option value="$PROJECT_DIR$/subprojects/auth" />
             <option value="$PROJECT_DIR$/subprojects/base" />

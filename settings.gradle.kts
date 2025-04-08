@@ -47,6 +47,7 @@ applicationList.add("app")
 
 // sub businesses
 businessList.add("intro")
+businessList.add("home")
 
 // sub projects
 projectList.add("auth")

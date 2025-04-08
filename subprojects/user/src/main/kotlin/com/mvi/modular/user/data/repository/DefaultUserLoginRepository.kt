@@ -29,7 +29,7 @@ internal class DefaultUserLoginRepository(
             }
 
             is Either.Error -> {
-                Either.Error(response.error as Error)
+                Either.Error(response.error)
             }
         }
     }
@@ -59,7 +59,7 @@ internal class DefaultUserLoginRepository(
             }
 
             is Either.Error -> {
-                Either.Error(response.error as Error)
+                Either.Error(response.error)
             }
         }
     }
@@ -86,7 +86,7 @@ internal class DefaultUserLoginRepository(
             }
 
             is Either.Error -> {
-                Either.Error(response.error as Error)
+                Either.Error(response.error)
             }
         }
     }

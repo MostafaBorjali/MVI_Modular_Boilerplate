@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mvi.modular.home.screen.HomeScreen
 import com.mvi.modular.intro.screen.IntroScreen
 import com.mvi.modular.intro.screen.IntroScreenViewModel
 import com.mvi.modular.splash.SplashScreen
@@ -80,12 +81,13 @@ fun MviModularNavigation(
         //
         // Home screen with navigation bar
         //
-        /*composable(Destination.Home.Main.route) {
+        composable(Destination.Home.Main.route) {
+            val viewModel: IntroScreenViewModel = koinViewModel()
             HomeScreen(
                 modifier = Modifier.fillMaxSize(),
                 navigationService = navigationService,
             )
-        }*/
+        }
 
     }
 }

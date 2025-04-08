@@ -21,7 +21,8 @@ coil = "2.6.0"
 koin = "3.5.0"
 retrofit = "2.9.0"
 okhttp = "4.12.0"
-navigationCompose = "2.8.8"
+navigationCompose = "2.8.9"
+kotlinx-serialization = "1.6.0"
 composeBom = "2025.02.00"
 media3 = "1.5.1"
 constraintlayout = "1.1.1"
@@ -49,6 +50,10 @@ androidx-compose-material3-window = { group = "androidx.compose.material3", name
 androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 androidx-compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+
+# Serialization
+kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 
 google-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
 google-firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
@@ -92,6 +97,7 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+#jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 google-firebase = { id = "com.google.gms.google-services", version.ref = "firebase" }
 google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }

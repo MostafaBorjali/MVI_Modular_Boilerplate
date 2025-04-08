@@ -1,6 +1,7 @@
 package com.mvi.modular.user.service
 
 import com.mvi.modular.base.functional.Either
+import com.mvi.modular.error.domain.model.Error
 import com.mvi.modular.user.domain.model.UserRegisterInfo
 
 
@@ -26,5 +27,5 @@ interface UserLoginService {
      *
      * @param token google credentials token
      */
-    suspend fun google(token: String): Either<Boolean, Error>
+    suspend fun google(token: String): Either<Boolean,Error>
 }

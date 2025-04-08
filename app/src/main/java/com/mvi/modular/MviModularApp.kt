@@ -2,11 +2,11 @@ package com.mvi.modular
 
 
 import com.mvi.modular.auth.di.authModule
-import com.mvi.modular.barcode.di.barcodeModule
 import com.mvi.modular.crashlytics.lifecycle.CrashlyticsModuleLifecycleExtension
 import com.mvi.modular.deeplink.di.deeplinkModule
 import com.mvi.modular.di.appModule
 import com.mvi.modular.error.di.errorModule
+import com.mvi.modular.home.di.homeModule
 import com.mvi.modular.integration.application.IntegrationApplication
 import com.mvi.modular.integration.di.integrationModule
 import com.mvi.modular.integration.domain.extension.LifecycleExtension
@@ -21,6 +21,7 @@ import com.mvi.modular.network.di.networkModule
 import com.mvi.modular.notification.di.notificationModule
 import com.mvi.modular.notification.lifecycle.NotificationModuleLifecycleExtension
 import com.mvi.modular.persist.di.persistModule
+import com.mvi.modular.user.di.userModule
 import com.mvi.module.app.BuildConfig
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
@@ -57,7 +58,6 @@ class MviModularApp : IntegrationApplication() {
     }
 
 
-
     private fun localStartKoin() {
         startKoin {
             androidContext(this@MviModularApp)
@@ -68,13 +68,13 @@ class MviModularApp : IntegrationApplication() {
                  * sub businesses
                  */
                 introModule,
+                homeModule,
 
                 /*
                  * sub projects
                  */
                 appModule,
                 authModule,
-                barcodeModule,
                 deeplinkModule,
                 errorModule,
                 integrationModule,
@@ -83,9 +83,9 @@ class MviModularApp : IntegrationApplication() {
                 networkModule(BuildConfig.TEST_MODE),
                 notificationModule,
                 persistModule(false),
-                //userModule,
+                userModule,
 
-            )
+                )
         }
     }
 

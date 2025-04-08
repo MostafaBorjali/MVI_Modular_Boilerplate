@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.jetbrains.kotlin.compose)
-    alias(libs.plugins.jetbrains.kotlin.parcelize)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
     alias(libs.plugins.google.firebase)
     alias(libs.plugins.google.firebase.crashlytics)
 }
@@ -89,6 +89,7 @@ dependencies{
     // sub-businesses
     //
     implementation(projects.intro)
+    implementation(projects.home)
 
     //
     // sub-projects
@@ -107,6 +108,7 @@ dependencies{
     implementation(projects.strings)
     implementation(projects.ui)
     implementation(projects.utils)
+    implementation(projects.user)
 
     //
     // libraries

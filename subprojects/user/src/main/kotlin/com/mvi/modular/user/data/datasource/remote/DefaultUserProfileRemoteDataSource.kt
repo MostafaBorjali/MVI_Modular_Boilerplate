@@ -1,6 +1,7 @@
 package com.mvi.modular.user.data.datasource.remote
 
 import com.mvi.modular.base.functional.Either
+import com.mvi.modular.error.domain.model.Error
 import com.mvi.modular.error.extension.launchApiCatchingError
 import com.mvi.modular.error.service.ErrorService
 import com.mvi.modular.user.data.datasource.remote.dto.UpdateUserProfileRequestDto

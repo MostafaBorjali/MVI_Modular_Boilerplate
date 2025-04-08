@@ -37,6 +37,8 @@ class ConfigMod(private val project: Project) {
             "implementation"(libs.findLibrary("androidx.compose.lifecycle").get())
             "implementation"(libs.findLibrary("androidx.compose.activity").get())
             "implementation"(libs.findLibrary("androidx.compose.navigation").get())
+            "implementation"(libs.findLibrary("kotlinx.serialization.core").get())
+            "implementation"(libs.findLibrary("kotlinx.serialization.json").get())
             "implementation"(libs.findLibrary("androidx.compose.material3").get())
             "implementation"(libs.findLibrary("androidx.compose.material3.window").get())
         }

@@ -12,7 +12,7 @@ internal interface UserLoginRemoteDataSource {
      *
      * @param email target email to register
      */
-    suspend fun register(email: String): Either<UserRegisterResponseDto, Error>
+    suspend fun register(email: String): Either<UserRegisterResponseDto, com.mvi.modular.error.domain.model.Error>
 
     /**
      * Send verification code to server
@@ -23,10 +23,10 @@ internal interface UserLoginRemoteDataSource {
     suspend fun verify(
         email: String,
         verificationCode: String
-    ): Either<UserVerifyResponseDto, Error>
+    ): Either<UserVerifyResponseDto, com.mvi.modular.error.domain.model.Error>
 
     /**
      * Sing in with google
      */
-    suspend fun google(token: String): Either<UserVerifyResponseDto, Error>
+    suspend fun google(token: String): Either<UserVerifyResponseDto, com.mvi.modular.error.domain.model.Error>
 }

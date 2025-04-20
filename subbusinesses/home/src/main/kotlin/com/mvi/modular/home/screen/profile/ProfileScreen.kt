@@ -26,9 +26,11 @@ internal fun ProfileScreen() {
 
 @Composable
 private fun ProfileContent(modifier: Modifier) {
-    Box(modifier = modifier
-        .fillMaxSize()
-        .background(LocalColors.current.surfaceZ1Color)) {
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(LocalColors.current.surfaceZ1Color)
+    ) {
 
         Text(
             modifier = Modifier

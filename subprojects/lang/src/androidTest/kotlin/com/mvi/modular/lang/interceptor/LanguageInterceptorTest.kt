@@ -1,8 +1,8 @@
 package com.mvi.modular.lang.interceptor
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.lang.service.LanguageService
-import com.google.common.truth.Truth.assertThat
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse

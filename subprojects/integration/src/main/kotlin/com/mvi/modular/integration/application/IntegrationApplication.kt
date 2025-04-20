@@ -1,7 +1,6 @@
 package com.mvi.modular.integration.application
 
 import android.app.Application
-import com.mvi.modular.integration.config.AppConfig
 import com.mvi.modular.integration.domain.extension.LifecycleExtension
 import com.mvi.modular.integration.domain.model.LifecycleStatus
 import com.mvi.modular.integration.domain.usecase.NotifyApplicationLifecycleChangedUseCase

@@ -2,13 +2,13 @@ package com.mvi.modular.auth
 
 import androidx.test.filters.MediumTest
 import androidx.test.platform.app.InstrumentationRegistry
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.di.authModule
 import com.mvi.modular.auth.domain.model.AuthToken
 import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.auth.service.AuthService
 import com.mvi.modular.persist.di.persistModule
 import com.mvi.modular.persist.service.PersistService
-import com.google.common.truth.Truth.assertThat
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test

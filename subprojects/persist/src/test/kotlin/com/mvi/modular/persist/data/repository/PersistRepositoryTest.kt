@@ -1,8 +1,8 @@
 package com.mvi.modular.persist.data.repository
 
 import android.content.SharedPreferences
-import com.mvi.modular.persist.domain.repository.PersistRepository
 import com.google.common.truth.Truth.assertThat
+import com.mvi.modular.persist.domain.repository.PersistRepository
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.anyBoolean

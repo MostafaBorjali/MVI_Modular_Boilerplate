@@ -1,10 +1,10 @@
 package com.mvi.modular.navigation.domain.model
 
 import com.mvi.modular.navigation.core.NavigationConstants.ESIM_SCREEN
+import com.mvi.modular.navigation.core.NavigationConstants.EXPLORE_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.HOME_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.INTRO_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.PROFILE_SCREEN
-import com.mvi.modular.navigation.core.NavigationConstants.SHOP_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.SPLASH_SCREEN
 import kotlinx.serialization.Serializable
 
@@ -45,7 +45,7 @@ sealed class Destination(val route: String) {
          * Represent shop screen destination
          */
         @Serializable
-        data object Shop : Destination(SHOP_SCREEN)
+        data object Explore : Destination(EXPLORE_SCREEN)
 
         /**
          * Represent profile screen destination

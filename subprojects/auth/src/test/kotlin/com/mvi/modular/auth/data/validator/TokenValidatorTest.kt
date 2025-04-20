@@ -1,9 +1,9 @@
 package com.mvi.modular.auth.data.validator
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.core.AuthConstants.READ_WRITE_DEFAULT_OFFSET_VALUE
 import com.mvi.modular.auth.data.datasource.ReadWriteTokenDataSource
 import com.mvi.modular.auth.domain.model.TokenType
-import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

@@ -2,8 +2,8 @@ package com.mvi.modular.navigation.data.repository
 
 import androidx.navigation.NavHostController
 import androidx.test.filters.SmallTest
-import com.mvi.modular.navigation.domain.repository.NavigationRepository
 import com.google.common.truth.Truth.assertThat
+import com.mvi.modular.navigation.domain.repository.NavigationRepository
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito

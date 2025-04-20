@@ -32,6 +32,7 @@
             <option value="$PROJECT_DIR$/subprojects/error" />
             <option value="$PROJECT_DIR$/subprojects/integration" />
             <option value="$PROJECT_DIR$/subprojects/lang" />
+            <option value="$PROJECT_DIR$/subprojects/movie" />
             <option value="$PROJECT_DIR$/subprojects/navigation" />
             <option value="$PROJECT_DIR$/subprojects/network" />
             <option value="$PROJECT_DIR$/subprojects/notification" />
@@ -42,7 +43,6 @@
             <option value="$PROJECT_DIR$/subprojects/utils" />
           </set>
         </option>
-        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

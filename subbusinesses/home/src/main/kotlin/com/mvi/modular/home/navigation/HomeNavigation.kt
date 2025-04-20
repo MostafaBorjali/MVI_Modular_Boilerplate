@@ -6,12 +6,14 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mvi.modular.home.screen.esim.ESimScreen
+import com.mvi.modular.home.screen.explore.ExploreScreen
+import com.mvi.modular.home.screen.home.HomeScreen
+import com.mvi.modular.home.screen.home.HomeScreenViewModel
 import com.mvi.modular.home.screen.profile.ProfileScreen
-import com.mvi.modular.home.screen.shop.ShopScreen
 import com.mvi.modular.navigation.core.NavigationConstants
 import com.mvi.modular.navigation.domain.model.Destination
 import com.mvi.modular.navigation.service.NavigationService
+import org.koin.androidx.compose.koinViewModel
 
 
 @Composable
@@ -36,15 +38,18 @@ internal fun HomeScreenNavigation(
         // Home screen
         //
         composable(Destination.Home.ESim.route) {
-            // val viewModel: ESimScreenViewModel = koinViewModel()
-            ESimScreen()
+            val viewModel: HomeScreenViewModel = koinViewModel()
+            HomeScreen(
+                state = viewModel.uiState,
+                onEvent = viewModel::onEvent,
+            )
         }
         //
-        // Shop screen
+        // Explore screen
         //
-        composable(Destination.Home.Shop.route) {
+        composable(Destination.Home.Explore.route) {
             // val viewModel: ShopScreenViewModel = koinViewModel()
-            ShopScreen()
+            ExploreScreen()
         }
         //
         // Profile screen

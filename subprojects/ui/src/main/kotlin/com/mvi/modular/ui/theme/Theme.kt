@@ -20,7 +20,6 @@ import androidx.core.view.WindowCompat
 import com.mvi.modular.strings.StringsConstants
 
 
-
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
@@ -52,6 +51,7 @@ fun MviModularTheme(
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
+
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }

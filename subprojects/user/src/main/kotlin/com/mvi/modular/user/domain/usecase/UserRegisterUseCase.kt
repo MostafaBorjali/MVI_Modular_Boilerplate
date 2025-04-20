@@ -1,10 +1,9 @@
 package com.mvi.modular.user.domain.usecase
 
 import com.mvi.modular.base.functional.Either
+import com.mvi.modular.error.domain.model.Error
 import com.mvi.modular.user.domain.model.UserRegisterInfo
 import com.mvi.modular.user.domain.repository.UserLoginRepository
-import com.mvi.modular.error.domain.model.Error
-
 
 
 internal interface UserRegisterUseCase {

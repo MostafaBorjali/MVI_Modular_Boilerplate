@@ -1,8 +1,8 @@
 package com.mvi.modular.lang.domain.usecase
 
+import com.google.common.truth.Truth
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.lang.domain.repository.LanguageRepository
-import com.google.common.truth.Truth
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

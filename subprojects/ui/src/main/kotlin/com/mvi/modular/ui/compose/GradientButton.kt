@@ -64,10 +64,10 @@ fun GradientButton(
                         background(
                             Brush.horizontalGradient(
                                 colorStops =
-                                arrayOf(
-                                    0.0f to LocalColors.current.buttonPrimaryGradiantStart,
-                                    0.8f to LocalColors.current.buttonPrimaryGradiantEnd
-                                )
+                                    arrayOf(
+                                        0.0f to LocalColors.current.buttonPrimaryGradiantStart,
+                                        0.8f to LocalColors.current.buttonPrimaryGradiantEnd
+                                    )
                             )
                         )
                     },
@@ -117,7 +117,7 @@ fun GradientButtonPreview() {
 @Preview(showBackground = true)
 @Composable
 fun GradientButtonLoginPreview() {
-    MviModularTheme  {
+    MviModularTheme {
         GradientButton(
             modifier = Modifier
                 .fillMaxWidth()

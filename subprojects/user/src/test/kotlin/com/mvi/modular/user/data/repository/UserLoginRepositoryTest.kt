@@ -1,5 +1,7 @@
 package com.mvi.modular.user.data.repository
 
+import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.domain.model.AuthToken
 import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.auth.service.AuthService
@@ -15,8 +17,6 @@ import com.mvi.modular.user.data.datasource.remote.dto.UserVerifyResponseDto
 import com.mvi.modular.user.data.mapper.toJson
 import com.mvi.modular.user.domain.model.UserRegisterInfo
 import com.mvi.modular.user.domain.repository.UserLoginRepository
-import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
-import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Test

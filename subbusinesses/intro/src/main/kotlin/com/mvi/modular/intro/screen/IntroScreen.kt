@@ -204,7 +204,7 @@ fun IntroTopBar(
     ) {
         Image(
             modifier = Modifier,
-            painter = painterResource(id = drawables.ic_successful),
+            painter = painterResource(id = drawables.ic_movies_logo_white),
             contentDescription = "logo"
         )
 

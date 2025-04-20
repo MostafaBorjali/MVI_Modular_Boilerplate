@@ -2,11 +2,11 @@ package com.mvi.modular.auth.data.datasource
 
 import androidx.test.filters.MediumTest
 import androidx.test.platform.app.InstrumentationRegistry
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.domain.model.AuthToken
 import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.persist.di.persistModule
 import com.mvi.modular.persist.service.PersistService
-import com.google.common.truth.Truth.assertThat
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule

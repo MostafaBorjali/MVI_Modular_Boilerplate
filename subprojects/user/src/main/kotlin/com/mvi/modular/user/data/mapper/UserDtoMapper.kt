@@ -1,10 +1,10 @@
 package com.mvi.modular.user.data.mapper
 
+import com.google.gson.Gson
 import com.mvi.modular.user.data.datasource.remote.dto.UserInfoDto
 import com.mvi.modular.user.data.datasource.remote.dto.UserRegisterResponseDto
 import com.mvi.modular.user.domain.model.UserInfo
 import com.mvi.modular.user.domain.model.UserRegisterInfo
-import com.google.gson.Gson
 
 
 /**

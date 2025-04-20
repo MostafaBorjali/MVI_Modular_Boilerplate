@@ -1,9 +1,9 @@
 package com.mvi.modular.lang.domain.usecase
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.lang.domain.model.Ltr
 import com.mvi.modular.lang.domain.model.Rtl
-import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito

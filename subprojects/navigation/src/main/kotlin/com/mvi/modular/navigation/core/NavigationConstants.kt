@@ -22,7 +22,7 @@ object NavigationConstants {
 
     internal const val HOME_SCREEN = "home"
     internal const val ESIM_SCREEN = "home/esim"
-    internal const val SHOP_SCREEN = "home/shop"
+    internal const val EXPLORE_SCREEN = "home/explore"
     internal const val PROFILE_SCREEN = "home/profile"
 
 }

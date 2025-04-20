@@ -2,7 +2,6 @@ package com.mvi.modular.home.screen.profile.state
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.mvi.modular.error.domain.model.ErrorEvent
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.strings.core.strings
 import com.mvi.modular.ui.core.drawables
@@ -13,7 +12,7 @@ internal data class ProfileScreenUiState(
     val items: List<ProfileSettingItem> = emptyList(),
     val serverChanged: Boolean = false,
 
-)
+    )
 
 
 internal sealed class ProfileSettingItem(

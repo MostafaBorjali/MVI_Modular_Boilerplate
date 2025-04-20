@@ -68,6 +68,7 @@ dependencies {
     implementation(projects.error)
     implementation(projects.integration)
     implementation(projects.lang)
+    implementation(projects.movie)
     implementation(projects.navigation)
     implementation(projects.notification)
     implementation(projects.persist)

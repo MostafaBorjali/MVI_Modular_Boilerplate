@@ -17,7 +17,7 @@ internal class DefaultUserLoginRemoteDataSource(
 ) : UserLoginRemoteDataSource {
 
 
-    override suspend fun register(email: String): Either<UserRegisterResponseDto, com.mvi.modular.error.domain.model.Error> {
+    override suspend fun register(email: String): Either<UserRegisterResponseDto, Error> {
         return errorService.launchApiCatchingError {
             userLoginApi.register(body = UserRegisterRequestDto(email)).response
         }

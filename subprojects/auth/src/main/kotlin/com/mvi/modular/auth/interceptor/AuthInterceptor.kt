@@ -4,6 +4,7 @@ import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.auth.service.AuthService
 import com.mvi.modular.error.domain.exception.AccessTokenExpiredException
 import com.mvi.modular.error.domain.exception.AccessTokenNotFoundException
+import com.mvi.modular.error.domain.exception.RefreshTokenNotFoundException
 import com.mvi.modular.network.annotation.withoutAuthentication
 import okhttp3.Interceptor
 import okhttp3.Response
@@ -24,9 +25,9 @@ internal class AuthInterceptor(
         //
         // use this section after add refresh token flow
         //
-//        if (!authService.isAvailable(TokenType.RefreshToken)) {
-//            throw RefreshTokenNotFoundException()
-//        }
+        if (!authService.isAvailable(TokenType.RefreshToken)) {
+            throw RefreshTokenNotFoundException()
+        }
 
         if (!authService.isValid(TokenType.AccessToken, true)) {
             //

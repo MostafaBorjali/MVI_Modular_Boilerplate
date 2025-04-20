@@ -1,11 +1,11 @@
 package com.mvi.modular.auth.data.datasource
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.core.AuthConstants.READ_WRITE_DEFAULT_OFFSET_VALUE
 import com.mvi.modular.auth.core.AuthConstants.READ_WRITE_EXPIRATION_KEY
 import com.mvi.modular.auth.domain.model.AuthToken
 import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.persist.service.PersistService
-import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.anyInt

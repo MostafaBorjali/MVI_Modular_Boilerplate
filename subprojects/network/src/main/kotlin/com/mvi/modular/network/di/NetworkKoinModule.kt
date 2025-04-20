@@ -1,11 +1,10 @@
 package com.mvi.modular.network.di
 
-import com.mvi.modular.network.core.NetworkConstants.AMMOTEL_BASE_URL
 import com.mvi.modular.network.core.NetworkConstants.BASE_URL_DEBUG
+import com.mvi.modular.network.core.NetworkConstants.BASE_URL_PRODUCTION
 import com.mvi.modular.network.core.NetworkConstants.DEFAULT_CONNECTION_TIMEOUT
 import com.mvi.modular.network.core.NetworkConstants.DEFAULT_READ_TIMEOUT
 import com.mvi.modular.network.core.NetworkConstants.DEFAULT_WRITE_TIMEOUT
-import com.mvi.modular.network.core.NetworkConstants.QUALIFIER_AUTH_INTERCEPTOR
 import com.mvi.modular.network.core.NetworkConstants.QUALIFIER_LANGUAGE_INTERCEPTOR
 import com.mvi.modular.network.core.NetworkConstants.QUALIFIER_NETWORK_INTERCEPTOR
 import com.mvi.modular.network.interceptor.NetworkInterceptor
@@ -43,23 +42,23 @@ fun networkModule(debug: Boolean = false) = module {
                 .addInterceptor(logger)
                 .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_NETWORK_INTERCEPTOR)))
                 .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_LANGUAGE_INTERCEPTOR)))
-                .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_AUTH_INTERCEPTOR)))
+                // .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_AUTH_INTERCEPTOR)))
                 .build()
         } else {
             createOkhttpClient()
                 .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_NETWORK_INTERCEPTOR)))
                 .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_LANGUAGE_INTERCEPTOR)))
-                .addInterceptor(interceptor = get(qualifier = named(QUALIFIER_AUTH_INTERCEPTOR)))
+                //.addInterceptor(interceptor = get(qualifier = named(QUALIFIER_AUTH_INTERCEPTOR)))
                 .build()
         }
 
         createRetrofit(
             httpUrl =
-            if (debug && !production) {
-                BASE_URL_DEBUG.toHttpUrl()
-            } else {
-                AMMOTEL_BASE_URL.toHttpUrl()
-            },
+                if (debug && !production) {
+                    BASE_URL_DEBUG.toHttpUrl()
+                } else {
+                    BASE_URL_PRODUCTION.toHttpUrl()
+                },
             client = client,
         )
     }

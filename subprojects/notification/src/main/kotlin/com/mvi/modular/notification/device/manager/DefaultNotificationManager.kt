@@ -5,14 +5,14 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.messaging.FirebaseMessaging
+import com.google.firebase.messaging.RemoteMessage
 import com.mvi.modular.integration.resolver.ActivityResolver
 import com.mvi.modular.notification.R
 import com.mvi.modular.notification.core.NotificationConstants.NOTIFICATION_REQUEST_CODE
 import com.mvi.modular.notification.core.createNotificationChannel
 import com.mvi.modular.notification.core.notificationPendingIntentFlag
 import com.mvi.modular.notification.domain.manager.NotificationManager
-import com.google.firebase.messaging.FirebaseMessaging
-import com.google.firebase.messaging.RemoteMessage
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 
@@ -42,7 +42,12 @@ internal class DefaultNotificationManager(
             .setContentTitle(remoteMessage.notification?.title)
             .setContentText(remoteMessage.notification?.body)
             .setSmallIcon(R.drawable.ic_notification)
-            .setColor(ContextCompat.getColor(context, com.mvi.modular.ui.R.color.primary_first_color))
+            .setColor(
+                ContextCompat.getColor(
+                    context,
+                    com.mvi.modular.ui.R.color.primary_first_color
+                )
+            )
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setCategory(NotificationCompat.CATEGORY_MESSAGE)
             .setWhen(System.currentTimeMillis())

@@ -1,7 +1,7 @@
 package com.mvi.modular.crashlytics.lifecycle
 
-import com.mvi.modular.integration.domain.extension.LifecycleExtension
 import com.google.firebase.crashlytics.FirebaseCrashlytics
+import com.mvi.modular.integration.domain.extension.LifecycleExtension
 
 
 class CrashlyticsModuleLifecycleExtension : LifecycleExtension {

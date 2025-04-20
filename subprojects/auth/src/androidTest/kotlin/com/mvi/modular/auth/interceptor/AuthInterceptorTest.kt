@@ -1,11 +1,11 @@
 package com.mvi.modular.auth.interceptor
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.auth.domain.model.TokenType
 import com.mvi.modular.auth.service.AuthService
 import com.mvi.modular.error.domain.exception.AccessTokenExpiredException
 import com.mvi.modular.error.domain.exception.AccessTokenNotFoundException
 import com.mvi.modular.network.annotation.WithoutAuthentication
-import com.google.common.truth.Truth.assertThat
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.ResponseBody

@@ -92,32 +92,33 @@ fun TabSwitch(
                     .fillMaxHeight()
             )
 
-            Row(modifier = Modifier
-                .fillMaxWidth()
-                .drawWithContent {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .drawWithContent {
 
-                    // This is for setting black text while drawing on white background
-                    val padding = 8.dp.toPx()
-                    drawRoundRect(
-                        topLeft = Offset(x = indicatorOffset.toPx() + padding, padding),
-                        size = Size(tabWidth.toPx() - padding * 2, size.height - padding * 2),
-                        color = Color.Black,
-                        cornerRadius = CornerRadius(x = 8.dp.toPx(), y = 8.dp.toPx()),
-                    )
-
-                    drawWithLayer {
-                        drawContent()
-
-                        // This is white top rounded rectangle
+                        // This is for setting black text while drawing on white background
+                        val padding = 8.dp.toPx()
                         drawRoundRect(
-                            topLeft = Offset(x = indicatorOffset.toPx(), 0f),
-                            size = Size(tabWidth.toPx(), size.height),
-                            color = Color.White,
+                            topLeft = Offset(x = indicatorOffset.toPx() + padding, padding),
+                            size = Size(tabWidth.toPx() - padding * 2, size.height - padding * 2),
+                            color = Color.Black,
                             cornerRadius = CornerRadius(x = 8.dp.toPx(), y = 8.dp.toPx()),
-                            blendMode = BlendMode.SrcOut
                         )
+
+                        drawWithLayer {
+                            drawContent()
+
+                            // This is white top rounded rectangle
+                            drawRoundRect(
+                                topLeft = Offset(x = indicatorOffset.toPx(), 0f),
+                                size = Size(tabWidth.toPx(), size.height),
+                                color = Color.White,
+                                cornerRadius = CornerRadius(x = 8.dp.toPx(), y = 8.dp.toPx()),
+                                blendMode = BlendMode.SrcOut
+                            )
+                        }
                     }
-                }
             ) {
                 items.forEachIndexed { index, text ->
                     Box(

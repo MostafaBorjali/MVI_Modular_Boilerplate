@@ -27,7 +27,7 @@ fun SplashScreen(
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(id = drawables.ic_successful),
+            painter = painterResource(id = drawables.ic_movies_logo),
             contentDescription = "logo"
         )
     }

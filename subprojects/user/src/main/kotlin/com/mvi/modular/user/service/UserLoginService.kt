@@ -27,5 +27,5 @@ interface UserLoginService {
      *
      * @param token google credentials token
      */
-    suspend fun google(token: String): Either<Boolean,Error>
+    suspend fun google(token: String): Either<Boolean, Error>
 }

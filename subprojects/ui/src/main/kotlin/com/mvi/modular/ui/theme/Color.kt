@@ -40,8 +40,8 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
-val PrimaryGradiantStart = Color(0xFFFFCB27)
-val PrimaryGradiantEnd = Color(0xFFEF5316)
+val PrimaryGradiantStart = Color(0xFFff1744)
+val PrimaryGradiantEnd = Color(0xff880e4f)
 
 
 val Orange50 = Color(0xFFFDEEE8)
@@ -206,12 +206,6 @@ val AdditionalPurple800 = Color(0xFF574262)
 val AdditionalPurple900 = Color(0xFF42324B)
 
 
-val primaryFirst = Color(0xFF031B38)
-val primarySecond = Color(0xFF5454CC)
-val secondray = Color(0xFFA370FF)
-val primaryThird = Color(0xFFF771FF)
-val surfaceZ1Color = Color(0xFFEAF4FF)
-
 val LocalColors = compositionLocalOf { MviModularColors }
 
 @Immutable
@@ -314,7 +308,7 @@ internal val MviModularColors = Colors(
     buttonPrimaryGradiantEnd = PrimaryGradiantEnd,
     cardAngledGradientStart = Red500,
     cardAngledGradientEnd = Black,
-    buttonGradiantTextColor = Black500,
+    buttonGradiantTextColor = White500,
     primaryGradiantStart = PrimaryGradiantStart,
     primaryGradiantEnd = PrimaryGradiantEnd,
     buttonColor = Grey500

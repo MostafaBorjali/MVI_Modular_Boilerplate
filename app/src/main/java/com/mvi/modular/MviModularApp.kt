@@ -16,6 +16,7 @@ import com.mvi.modular.intro.di.introModule
 import com.mvi.modular.lang.di.langModule
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.lang.service.LanguageConfigService
+import com.mvi.modular.movie.di.movieModule
 import com.mvi.modular.navigation.di.navigationModule
 import com.mvi.modular.network.di.networkModule
 import com.mvi.modular.notification.di.notificationModule
@@ -84,8 +85,8 @@ class MviModularApp : IntegrationApplication() {
                 notificationModule,
                 persistModule(false),
                 userModule,
-
-                )
+                movieModule,
+            )
         }
     }
 

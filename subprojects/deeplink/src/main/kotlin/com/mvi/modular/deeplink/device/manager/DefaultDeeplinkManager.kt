@@ -38,7 +38,7 @@ internal class DefaultDeeplinkManager : DeeplinkManager {
             DEEPLINK_SHOP_PATH -> {
                 Deeplink(
                     destination = Destination.Home.Main,
-                    subDestination = Destination.Home.Shop,
+                    subDestination = Destination.Home.Explore,
                     args = null,
                     needLogin = false,
                 )

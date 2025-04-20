@@ -1,9 +1,9 @@
 package com.mvi.modular.network.interceptor
 
 import android.os.Build
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.integration.domain.model.ApplicationInfo
 import com.mvi.modular.integration.service.ApplicationInfoService
-import com.google.common.truth.Truth.assertThat
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse

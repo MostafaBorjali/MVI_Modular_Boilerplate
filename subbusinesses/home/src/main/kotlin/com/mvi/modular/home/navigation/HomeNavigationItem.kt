@@ -14,14 +14,14 @@ internal sealed class HomeNavigationItem(
 ) {
     data object MyESim : HomeNavigationItem(
         Destination.Home.ESim,
-        drawables.ic_nav_bar_esim,
-        strings.home_my_esim_title
+        drawables.ic_home,
+        strings.home_title
     )
 
-    data object Shop : HomeNavigationItem(
-        Destination.Home.Shop,
-        drawables.ic_nav_bar_shop,
-        strings.home_shop_title
+    data object Explore : HomeNavigationItem(
+        Destination.Home.Explore,
+        drawables.ic_search,
+        strings.home_explore_title
     )
 
     data object Profile : HomeNavigationItem(

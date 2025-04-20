@@ -18,9 +18,9 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mvi.modular.ui.core.drawables
-import com.mvi.modular.ui.theme.MviModularTheme
 import com.mvi.modular.ui.theme.LocalPadding
 import com.mvi.modular.ui.theme.LocalTypography
+import com.mvi.modular.ui.theme.MviModularTheme
 
 
 @Composable

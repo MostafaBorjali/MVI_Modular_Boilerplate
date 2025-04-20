@@ -1,5 +1,6 @@
 @file:Suppress("UnstableApiUsage")
-import org.gradle.api.initialization.resolve.RepositoriesMode.*
+
+import org.gradle.api.initialization.resolve.RepositoriesMode.FAIL_ON_PROJECT_REPOS
 import java.net.URI
 
 pluginManagement {
@@ -7,7 +8,7 @@ pluginManagement {
         google()
         google {
             content {
-                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.modular.*")
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
             }
@@ -65,6 +66,7 @@ projectList.add("strings")
 projectList.add("ui")
 projectList.add("user")
 projectList.add("utils")
+projectList.add("movie")
 
 
 

@@ -2,9 +2,9 @@ package com.mvi.modular.persist
 
 import androidx.test.filters.SmallTest
 import androidx.test.platform.app.InstrumentationRegistry
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.persist.di.persistModule
 import com.mvi.modular.persist.service.PersistService
-import com.google.common.truth.Truth.assertThat
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test

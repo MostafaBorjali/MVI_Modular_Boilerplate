@@ -10,12 +10,12 @@ import androidx.navigation.compose.rememberNavController
 import com.mvi.modular.home.screen.HomeScreen
 import com.mvi.modular.intro.screen.IntroScreen
 import com.mvi.modular.intro.screen.IntroScreenViewModel
-import com.mvi.modular.splash.SplashScreen
 import com.mvi.modular.navigation.core.NavigationConstants.APPLICATION_NAVIGATION_ID
 import com.mvi.modular.navigation.domain.model.Destination
 import com.mvi.modular.navigation.service.NavigationService
 import com.mvi.modular.persist.core.PersistConstants.KEY_IS_INTRO_SEEN
 import com.mvi.modular.persist.service.PersistService
+import com.mvi.modular.splash.SplashScreen
 import com.mvi.modular.ui.theme.LocalColors
 import org.koin.androidx.compose.koinViewModel
 
@@ -64,19 +64,19 @@ fun MviModularNavigation(
         // Intro screen
         //
         composable(Destination.Intro.route) {
-              val viewModel: IntroScreenViewModel = koinViewModel()
-              IntroScreen(
-                  modifier = Modifier.fillMaxSize(),
-                  uiState = viewModel.uiState,
-                  onEvent = viewModel::event
-              ) {
-                  navigationService.navigate(
-                      id = APPLICATION_NAVIGATION_ID,
-                      destination = Destination.Home.Main,
-                      popupDestination = Destination.Intro,
-                      singleTop = true,
-                  )
-              }
+            val viewModel: IntroScreenViewModel = koinViewModel()
+            IntroScreen(
+                modifier = Modifier.fillMaxSize(),
+                uiState = viewModel.uiState,
+                onEvent = viewModel::event
+            ) {
+                navigationService.navigate(
+                    id = APPLICATION_NAVIGATION_ID,
+                    destination = Destination.Home.Main,
+                    popupDestination = Destination.Intro,
+                    singleTop = true,
+                )
+            }
         }
         //
         // Home screen with navigation bar

@@ -84,7 +84,7 @@ ConfigMod(project)
     .testDependencies()
     .androidTestDependencies()
 
-dependencies{
+dependencies {
     //
     // sub-businesses
     //
@@ -101,6 +101,7 @@ dependencies{
     implementation(projects.error)
     implementation(projects.integration)
     implementation(projects.lang)
+    implementation(projects.movie)
     implementation(projects.navigation)
     implementation(projects.network)
     implementation(projects.notification)

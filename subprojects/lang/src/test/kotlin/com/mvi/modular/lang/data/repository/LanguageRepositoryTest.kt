@@ -1,10 +1,10 @@
 package com.mvi.modular.lang.data.repository
 
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.lang.core.LangConstants.KEY_CURRENT_LANG
 import com.mvi.modular.lang.domain.model.Lang
 import com.mvi.modular.lang.domain.repository.LanguageRepository
 import com.mvi.modular.persist.service.PersistService
-import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

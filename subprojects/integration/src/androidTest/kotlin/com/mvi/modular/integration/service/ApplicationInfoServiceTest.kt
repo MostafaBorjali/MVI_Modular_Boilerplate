@@ -2,9 +2,9 @@ package com.mvi.modular.integration.service
 
 import androidx.test.filters.SmallTest
 import androidx.test.platform.app.InstrumentationRegistry
+import com.google.common.truth.Truth.assertThat
 import com.mvi.modular.integration.di.integrationModule
 import com.mvi.modular.integration.domain.model.ApplicationInfo
-import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 import org.koin.android.ext.koin.androidContext

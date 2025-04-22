@@ -312,7 +312,7 @@ fun IntroContent(
             Text(
                 modifier = Modifier.padding(start = MaterialTheme.padding.large),
                 text = stringResource(id = strings.intro_text_description).trimIndent(),
-                color = LocalColors.current.whiteLabelColorSecondary,
+                color = LocalColors.current.whiteLabelColorPrimary,
                 style = LocalTypography.current.extraLarge.body,
             )
         }

@@ -25,14 +25,12 @@ internal interface MovieApi : NetworkApi {
      *   - If successful, contains the list of `MovieDto` objects in the `data` field.
      *   - May contain an error message in the `errorMessage` field if the request fails.
      *
-     * @throws CancellationException If the coroutine is cancelled.
-     * @throws IOException If there's an error during the network operation.
      */
     @GET(GET_LIST_OF_MOVIES)
     suspend fun getListOfMovies(
         @Query("include_adult") includeAdult: Boolean = false,
         @Query("include_video") includeVideo: Boolean = false,
-        @Query("language") language: String = "en-US",
+        @Query("language") language: String,
         @Query("page") page: Int,
         @Query("primary_release_date.gte") fromDate: String,
         @Query("primary_release_date.lt") toDate: String,

@@ -12,8 +12,8 @@ internal class DefaultMoviesRepository(
     private val movieRemoteDataSource: MovieRemoteDataSource,
 ) : MoviesRepository {
 
-    override suspend fun getListOfMovies(pageNumber: Int): Either<List<MovieDto>?, Error> {
-        return when (val response = movieRemoteDataSource.getListOfMovies(pageNumber)) {
+    override suspend fun getListOfMovies(pageNumber: Int, lang: String): Either<List<MovieDto>?, Error> {
+        return when (val response = movieRemoteDataSource.getListOfMovies(pageNumber, lang)) {
             is Either.Success -> {
                 Either.Success(response.data?.toMovies())
             }

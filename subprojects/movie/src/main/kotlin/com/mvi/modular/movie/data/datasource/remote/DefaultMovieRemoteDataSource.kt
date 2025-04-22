@@ -18,10 +18,11 @@ internal class DefaultMovieRemoteDataSource(
 ) : MovieRemoteDataSource {
 
 
-    override suspend fun getListOfMovies(pageNumber: Int): Either<List<MovieEntity>?, Error> {
+    override suspend fun getListOfMovies(pageNumber: Int, lang: String): Either<List<MovieEntity>?, Error> {
         return errorService.launchApiCatchingError {
             movieApi.getListOfMovies(
                 page = pageNumber,
+                language = lang,
                 fromDate = getLastMonthDate(),
                 toDate = getCurrentDate()
             ).results

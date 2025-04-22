@@ -11,6 +11,6 @@ internal interface MoviesRepository {
     /**
      * Get list of available movies
      */
-    suspend fun getListOfMovies(pageNumber: Int): Either<List<MovieDto>?, Error>
+    suspend fun getListOfMovies(pageNumber: Int, lang: String): Either<List<MovieDto>?, Error>
 
 }

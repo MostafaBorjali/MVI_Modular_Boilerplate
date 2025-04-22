@@ -9,6 +9,7 @@ import com.mvi.modular.home.screen.home.event.HomeScreenEvent
 import com.mvi.modular.home.screen.home.event.HomeScreenEvent.LoadTopMovies
 import com.mvi.modular.home.screen.home.event.HomeScreenEvent.Refresh
 import com.mvi.modular.home.screen.home.state.HomeScreenUiState
+import com.mvi.modular.lang.service.LanguageService
 import com.mvi.modular.movie.service.MoviesService
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,6 +20,7 @@ import kotlinx.coroutines.launch
 
 internal class HomeScreenViewModel(
     private val moviesService: MoviesService,
+    private val languageService: LanguageService,
     private val errorService: ErrorService,
     private val dispatcher: CoroutineDispatcher,
 ) : ViewModel() {
@@ -46,7 +48,11 @@ internal class HomeScreenViewModel(
 
     private fun getTopMovies() {
         viewModelScope.launch(dispatcher) {
-            when (val response = moviesService.getListOfMovies(1)) {
+            when (val response = moviesService.getListOfMovies(
+                pageNumber = 1,
+                lang = "${languageService.getCurrentLanguage().languageCode}-" +
+                        languageService.getCurrentLanguage().countryCode
+            )) {
                 is Either.Success -> {
                     _state.update { current ->
                         current.copy(

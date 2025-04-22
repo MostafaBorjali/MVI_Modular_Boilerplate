@@ -56,8 +56,10 @@
     <string name="login_verification_code_resend_time">%s içinde yeniden gönder.</string>
     <string name="login_verification_code_resend_code">Kodu yeniden gönder</string>
 
-    <string name="home_title">ESIM\'im</string>
-    <string name="home_explore_title">Alışverış</string>
+    <string name="home_title">Ev</string>
+    <string name="home_explore_title">Keşfetmek</string>
     <string name="home_profile_title">Profil</string>
+    <string name="home_overview">Genel bakış: %1$s</string>
+    <string name="home_title_movie">başlık: %1$s</string>
     <string name="home_profile_change_server">"Change Server"</string>
 </resources>

@@ -10,7 +10,7 @@ internal interface GetListOfMoviesUseCase {
     /**
      *
      */
-    suspend operator fun invoke(pageNumber: Int): Either<List<MovieDto>?, Error>
+    suspend operator fun invoke(pageNumber: Int,lang: String): Either<List<MovieDto>?, Error>
 }
 
 
@@ -18,7 +18,7 @@ internal class DefaultGetListOfMoviesUseCase(
     private val moviesRepository: MoviesRepository,
 ) : GetListOfMoviesUseCase {
 
-    override suspend fun invoke(pageNumber: Int): Either<List<MovieDto>?, Error> {
-        return moviesRepository.getListOfMovies(pageNumber)
+    override suspend fun invoke(pageNumber: Int, lang: String): Either<List<MovieDto>?, Error> {
+        return moviesRepository.getListOfMovies(pageNumber,lang)
     }
 }

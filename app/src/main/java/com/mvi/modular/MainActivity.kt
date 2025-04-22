@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
                     CompositionLocalProvider(LocalLayoutDirection provides direction) {
                         Surface(
                             modifier = Modifier.fillMaxSize(),
-                            color = LocalColors.current.surfaceZ0Color,
+                            color = LocalColors.current.surfaceColor,
                         ) {
                             MviModularNavigation(
                                 modifier = Modifier.fillMaxSize(),

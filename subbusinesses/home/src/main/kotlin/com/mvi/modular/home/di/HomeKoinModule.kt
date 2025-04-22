@@ -13,6 +13,7 @@ val homeModule = module {
     viewModel {
         HomeScreenViewModel(
             moviesService = get(),
+            languageService = get(),
             errorService = get(),
             dispatcher = Dispatchers.IO
         )

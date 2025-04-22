@@ -63,8 +63,10 @@
     <string name="login_verification_code_resend_time">"Reenviar en %s"</string>
     <string name="login_verification_code_resend_code">"Reenviar código"</string>
 
-    <string name="home_title">"Mi ESIM"</string>
-    <string name="home_explore_title">"Tienda"</string>
+    <string name="home_title">"Hogar"</string>
+    <string name="home_explore_title">"Explorar"</string>
     <string name="home_profile_title">"Perfil"</string>
+    <string name="home_overview">Descripción general: %1$s</string>
+    <string name="home_title_movie">título: %1$s</string>
     <string name="home_profile_change_server">"Change Server"</string>
 </resources>

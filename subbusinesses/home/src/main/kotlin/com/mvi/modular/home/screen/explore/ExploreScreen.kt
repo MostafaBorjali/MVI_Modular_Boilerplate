@@ -30,7 +30,7 @@ private fun ExploreContent(modifier: Modifier) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(LocalColors.current.surfaceZ1Color)
+            .background(LocalColors.current.surfaceColor)
     ) {
 
         Text(

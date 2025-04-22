@@ -65,14 +65,14 @@ fun GradientButton(
                             Brush.horizontalGradient(
                                 colorStops =
                                     arrayOf(
-                                        0.0f to LocalColors.current.buttonPrimaryGradiantStart,
-                                        0.8f to LocalColors.current.buttonPrimaryGradiantEnd
+                                        0.0f to LocalColors.current.primaryGradiantStart,
+                                        0.8f to LocalColors.current.primaryGradiantEnd
                                     )
                             )
                         )
                     },
                     ifFalse = {
-                        background(LocalColors.current.backgroundBezeledButtonSecondaryColor)
+                        background(LocalColors.current.primaryColor)
                     }
                 )
                 .animateContentSize(),
@@ -92,7 +92,7 @@ fun GradientButton(
                 Text(
                     text = text,
                     style = LocalTypography.current.large.body,
-                    color = LocalColors.current.buttonGradiantTextColor,
+                    color = LocalColors.current.whiteLabelColorPrimary,
                 )
             }
         }

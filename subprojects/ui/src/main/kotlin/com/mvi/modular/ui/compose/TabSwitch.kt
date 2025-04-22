@@ -1,5 +1,6 @@
 package com.mvi.modular.ui.compose
 
+import android.annotation.SuppressLint
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
@@ -46,6 +47,7 @@ import com.mvi.modular.ui.theme.LocalTypography
 import com.mvi.modular.ui.theme.MviModularTheme
 
 
+@SuppressLint("UseOfNonLambdaOffsetOverload")
 @Composable
 fun TabSwitch(
     modifier: Modifier = Modifier,
@@ -57,7 +59,7 @@ fun TabSwitch(
         modifier
             .clip(RoundedCornerShape(10.dp))
             .background(
-                color = LocalColors.current.backgroundBezeledButtonSecondaryColor.copy(
+                color = LocalColors.current.primaryColor.copy(
                     alpha = 0.24f
                 )
             )

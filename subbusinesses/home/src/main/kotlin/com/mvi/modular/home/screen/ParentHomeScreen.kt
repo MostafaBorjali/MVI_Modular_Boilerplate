@@ -121,10 +121,10 @@ private fun BottomBar(
                     },
                     alwaysShowLabel = true,
                     colors = NavigationBarItemDefaults.colors(
-                        selectedIconColor = LocalColors.current.primaryFirstColor,
-                        selectedTextColor = LocalColors.current.primaryFirstColor,
-                        unselectedIconColor = LocalColors.current.borderIconDeActiveColor,
-                        unselectedTextColor = LocalColors.current.borderIconDeActiveColor,
+                        selectedIconColor = LocalColors.current.navbarItemColor,
+                        selectedTextColor = LocalColors.current.navbarItemColor,
+                        unselectedIconColor = LocalColors.current.secondaryColor,
+                        unselectedTextColor = LocalColors.current.secondaryColor,
                         indicatorColor = Color.Transparent
                     )
                 )

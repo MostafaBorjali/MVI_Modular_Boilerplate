@@ -40,10 +40,10 @@ class GetPopularMoviesListUseCaseTest {
                     posterPath = "https://media.themoviedb.org/t/p/w220_and_h330_face/9rCBCm9cyI4JfLEhx3EncyncMR3.jpg",
                 ),
             )
-            Mockito.`when`(moviesRepository.getListOfMovies(1))
+            Mockito.`when`(moviesRepository.getListOfMovies(1,"en-Us"))
                 .thenReturn(Either.Success(movies))
 
-            val result = getListOfMoviesUseCase(1)
+            val result = getListOfMoviesUseCase(1, "en-Us")
             assertThat(result).isInstanceOf(Either.Success::class.java)
             val list = (result as Either.Success).data
             assertThat(list?.size).isEqualTo(2)

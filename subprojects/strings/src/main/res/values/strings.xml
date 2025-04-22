@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
 
     <string name="general_popular_destinations">"Popular Destinations"</string>
@@ -31,6 +31,7 @@
     <string name="general_next">"Next"</string>
     <string name="general_nick_name">"Nick Name"</string>
     <string name="general_previous">"Prev"</string>
+    <string name="general_image_url" tools:ignore="MissingTranslation">"https://media.themoviedb.org/t/p/w220_and_h330_face%s"</string>
 
 
     <string name="general_error">"Error"</string>
@@ -69,6 +70,8 @@
     <string name="home_title">"Home"</string>
     <string name="home_explore_title">"Explore"</string>
     <string name="home_profile_title">"Profile"</string>
+    <string name="home_overview">Overview: %1$s</string>
+    <string name="home_title_movie">Title: %1$s</string>
     <string name="home_profile_change_server">"Change Server"</string>
 
 </resources>

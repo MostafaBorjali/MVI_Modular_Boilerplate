@@ -12,8 +12,11 @@ internal class DefaultMoviesService(
 ) : MoviesService {
 
 
-    override suspend fun getListOfMovies(pageNumber: Int): Either<List<MovieDto>?, Error> {
-        return getListOfMoviesUseCase(pageNumber)
+    override suspend fun getListOfMovies(
+        pageNumber: Int,
+        lang: String
+    ): Either<List<MovieDto>?, Error> {
+        return getListOfMoviesUseCase(pageNumber,lang)
     }
 
 }

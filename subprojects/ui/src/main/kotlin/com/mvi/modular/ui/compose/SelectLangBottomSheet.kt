@@ -98,7 +98,7 @@ fun LanguageList(
         Text(
             text = stringResource(id = strings.select_lang_text_description),
             style = LocalTypography.current.large.body,
-            color = LocalColors.current.labelColorSecondary,
+            color = LocalColors.current.whiteLabelColorPrimary,
         )
 
         Spacer(modifier = Modifier.height(LocalPadding.current.large))
@@ -148,7 +148,7 @@ fun LanguageItem(
             .fillMaxWidth()
             .border(
                 width = MaterialTheme.dimen.borderWidth,
-                color = LocalColors.current.lineColor,
+                color = LocalColors.current.primaryColor,
                 shape = DefaultRoundCornerShape
             )
             .clip(DefaultRoundCornerShape)

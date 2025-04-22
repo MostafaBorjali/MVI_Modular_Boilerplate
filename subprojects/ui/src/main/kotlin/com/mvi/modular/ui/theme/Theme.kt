@@ -82,7 +82,7 @@ fun MviModularTheme(
     }
 
     CompositionLocalProvider(
-        LocalColors provides MviModularColors,
+        LocalColors provides if ( darkTheme) MviModularDArkColors else MviModularLightColors,
         LocalTextStyle provides LocalTextStyle.current.merge(fontFamily = RobotoCondensedFontFamily),
         LocalTypography provides typography,
         LocalDimen provides dimension,

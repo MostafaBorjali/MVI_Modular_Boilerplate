@@ -34,6 +34,7 @@ import coil.request.ImageRequest
 import com.mvi.modular.home.screen.home.event.HomeScreenEvent
 import com.mvi.modular.home.screen.home.state.HomeScreenUiState
 import com.mvi.modular.movie.domain.model.MovieDto
+import com.mvi.modular.strings.R.*
 import com.mvi.modular.strings.core.strings
 import com.mvi.modular.ui.compose.Dialog
 import com.mvi.modular.ui.theme.LocalColors
@@ -92,7 +93,7 @@ private fun HomeContent(
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(LocalColors.current.surfaceZ1Color)
+            .background(LocalColors.current.surfaceColor)
     ) {
         if (uiState.topMovies == null) {
             Text(
@@ -135,45 +136,49 @@ fun ItemOFList(movie: MovieDto) {
 
             AsyncImage(
                 model = ImageRequest.Builder(LocalContext.current)
-                    .data("https://media.themoviedb.org/t/p/w220_and_h330_face${movie.posterPath}")
+                    .data(stringResource(strings.general_image_url,movie.posterPath))
                     .crossfade(true)
                     .build(),
                 // placeholder = painterResource(drawables.ic_movies_logo_white),
                 contentDescription = stringResource(strings.app_name),
-                contentScale = ContentScale.Fit,
+                contentScale = ContentScale.FillBounds,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200.dp)
+                    .height(250.dp)
                     .clip(RoundedCornerShape(24.dp)),
             )
-            Text(
-                modifier = Modifier
-                    .padding(
-                        top = MaterialTheme.padding.small,
-                        start = MaterialTheme.padding.extraLarge,
-                        end = MaterialTheme.padding.extraLarge,
 
-                        ),
-                text = movie.title,
-                textAlign = TextAlign.Start,
-                style = LocalTypography.current.large.titleLarge,
-                color = LocalColors.current.whiteLabelColorPrimary,
-            )
 
         }
         Text(
             modifier = Modifier
                 .padding(
-                    top = MaterialTheme.padding.extraSmall,
+                    top = MaterialTheme.padding.small,
+                    start = MaterialTheme.padding.extraLarge,
+                    end = MaterialTheme.padding.extraLarge,
+
+                    ),
+            text = stringResource(string.home_title_movie, movie.title.ifEmpty { "_" }),
+            textAlign = TextAlign.Start,
+            style = LocalTypography.current.medium.headline,
+            color = LocalColors.current.blackLabelColorPrimary,
+        )
+
+        Text(
+            modifier = Modifier
+                .padding(
+                    top = MaterialTheme.padding.medium,
                     start = MaterialTheme.padding.extraLarge,
                     end = MaterialTheme.padding.extraLarge,
                     bottom = MaterialTheme.padding.medium
                 ),
-            text = movie.overview,
+            text = stringResource(string.home_overview, movie.overview.ifEmpty { "_" }),
             textAlign = TextAlign.Start,
             style = LocalTypography.current.large.body,
             color = LocalColors.current.blackLabelColorPrimary,
         )
+
+
     }
 
 

@@ -45,7 +45,7 @@ fun MviModularNavigation(
             SplashScreen(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(LocalColors.current.surfaceZ1Color),
+                    .background(LocalColors.current.surfaceColor),
             ) {
                 val destination = if (persistService.getBoolean(KEY_IS_INTRO_SEEN) == true) {
                     Destination.Home.Main
@@ -82,7 +82,7 @@ fun MviModularNavigation(
         // Home screen with navigation bar
         //
         composable(Destination.Home.Main.route) {
-            val viewModel: IntroScreenViewModel = koinViewModel()
+            //val viewModel: IntroScreenViewModel = koinViewModel()
             HomeScreen(
                 modifier = Modifier.fillMaxSize(),
                 navigationService = navigationService,

@@ -10,6 +10,6 @@ internal interface MovieRemoteDataSource {
     /**
      * Get home data
      */
-    suspend fun getListOfMovies(pageNumber: Int): Either<List<MovieEntity>?, Error>
+    suspend fun getListOfMovies(pageNumber: Int, lang: String): Either<List<MovieEntity>?, Error>
 
 }

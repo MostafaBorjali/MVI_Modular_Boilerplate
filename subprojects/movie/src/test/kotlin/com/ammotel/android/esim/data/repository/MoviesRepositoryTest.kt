@@ -13,7 +13,6 @@ import org.mockito.Mockito.times
 import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
 import com.mvi.modular.base.functional.Either
-import com.mvi.modular.movie.domain.model.MovieDto
 
 
 class MoviesRepositoryTest {
@@ -48,10 +47,10 @@ class MoviesRepositoryTest {
             ),
         )
 
-        `when`(movieRemoteDataSource.getListOfMovies(1)).thenReturn(Either.Success(response))
+        `when`(movieRemoteDataSource.getListOfMovies(1,"en-Us")).thenReturn(Either.Success(response))
 
-        val result = moviesRepository.getListOfMovies(1)
-        verify(movieRemoteDataSource, times(1)).getListOfMovies(1)
+        val result = moviesRepository.getListOfMovies(1, "en-Us")
+        verify(movieRemoteDataSource, times(1)).getListOfMovies(1, "en-Us")
         assertThat(result).isInstanceOf(Either.Success::class.java)
     }
 

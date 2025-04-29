@@ -20,7 +20,16 @@ val homeModule = module {
     }
 
     viewModel {
-        ProfileScreenViewModel(dispatcher = Dispatchers.IO)
+        ProfileScreenViewModel(
+            languageService = get(),
+            persistService = get() ,
+            userProfileService = get(),
+            applicationInfoService = get(),
+            navigationService = get(),
+            notificationService = get(),
+            errorService = get(),
+            dispatcher = Dispatchers.IO
+        )
     }
 
     viewModel {

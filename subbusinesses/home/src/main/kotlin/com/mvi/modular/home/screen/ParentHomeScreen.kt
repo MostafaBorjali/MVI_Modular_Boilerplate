@@ -39,7 +39,7 @@ fun HomeScreen(
     navigationService: NavigationService,
 ) {
     val items = listOf(
-        HomeNavigationItem.MyESim,
+        HomeNavigationItem.Home,
         HomeNavigationItem.Explore,
         HomeNavigationItem.Profile,
     )
@@ -69,7 +69,7 @@ fun HomeScreen(
         HomeScreenNavigation(
             modifier = Modifier.fillMaxSize(),
             navigationService = navigationService,
-            startDestination = Destination.Home.ESim,
+            startDestination = Destination.Home.Main,
             mainPaddingValues = paddingValues,
 
             )
@@ -80,7 +80,7 @@ fun HomeScreen(
         selectedIndex = 0
         navigationService.navigate(
             id = HOME_NAVIGATION_ID,
-            destination = Destination.Home.ESim,
+            destination = Destination.Home.Main,
             popupDestination = items[current].destination,
             saveState = true,
             singleTop = true,
@@ -138,7 +138,7 @@ private fun BottomBar(
 @Composable
 fun BottomBarLtrPreview() {
     val items = listOf(
-        HomeNavigationItem.MyESim,
+        HomeNavigationItem.Home,
         HomeNavigationItem.Explore,
         HomeNavigationItem.Profile,
     )
@@ -152,7 +152,7 @@ fun BottomBarLtrPreview() {
 @Composable
 fun BottomBarRtlPreview() {
     val items = listOf(
-        HomeNavigationItem.MyESim,
+        HomeNavigationItem.Home,
         HomeNavigationItem.Explore,
         HomeNavigationItem.Profile,
     )

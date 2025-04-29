@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
 @Suppress("unused", "UNCHECKED_CAST")
-class GlobalEventOfAmmotel private constructor() : CoroutineScope {
+class GlobalEvent private constructor() : CoroutineScope {
 
     private val job = SupervisorJob()
 
@@ -24,11 +24,11 @@ class GlobalEventOfAmmotel private constructor() : CoroutineScope {
 
         private const val GLOBAL_CONTEXT = "global:app_event_flow"
 
-        const val TAG = "GlobalEventOfAmmotel"
+        const val TAG = "GlobalEvent"
 
-        private var instance: GlobalEventOfAmmotel? = null
+        private var instance: GlobalEvent? = null
             get() = if (field == null) {
-                field = GlobalEventOfAmmotel()
+                field = GlobalEvent()
                 field
             } else {
                 field

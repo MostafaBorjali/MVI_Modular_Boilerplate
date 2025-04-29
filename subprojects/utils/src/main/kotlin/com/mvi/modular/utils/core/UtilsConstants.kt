@@ -10,7 +10,6 @@ object UtilsConstants {
     const val MEDIUM_DATE_FORMAT = "yyyy/dd/MM - HH:mm"
 
     //Object of global event
-    object GoToShopTab
-    object ShowAssignESimBottomSheet
+    object GoToExploreTab
     object HomeReLoad
 }

@@ -1,8 +1,7 @@
 package com.mvi.modular.navigation.domain.model
 
-import com.mvi.modular.navigation.core.NavigationConstants.ESIM_SCREEN
+import com.mvi.modular.navigation.core.NavigationConstants.MAIN_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.EXPLORE_SCREEN
-import com.mvi.modular.navigation.core.NavigationConstants.HOME_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.INTRO_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.PROFILE_SCREEN
 import com.mvi.modular.navigation.core.NavigationConstants.SPLASH_SCREEN
@@ -31,18 +30,18 @@ sealed class Destination(val route: String) {
 
         /**
          * Represent nav host
-         */
+         *//*
         @Serializable
-        data object Main : Destination(HOME_SCREEN)
+        data object Main : Destination(HOME_SCREEN)*/
 
         /**
-         * Represent e-sim screen destination
+         * Represent main screen destination
          */
         @Serializable
-        data object ESim : Destination(ESIM_SCREEN)
+        data object Main : Destination(MAIN_SCREEN)
 
         /**
-         * Represent shop screen destination
+         * Represent explore screen destination
          */
         @Serializable
         data object Explore : Destination(EXPLORE_SCREEN)

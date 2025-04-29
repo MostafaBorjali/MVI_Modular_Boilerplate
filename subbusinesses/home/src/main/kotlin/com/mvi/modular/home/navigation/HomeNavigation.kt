@@ -10,6 +10,7 @@ import com.mvi.modular.home.screen.explore.ExploreScreen
 import com.mvi.modular.home.screen.home.HomeScreen
 import com.mvi.modular.home.screen.home.HomeScreenViewModel
 import com.mvi.modular.home.screen.profile.ProfileScreen
+import com.mvi.modular.home.screen.profile.ProfileScreenViewModel
 import com.mvi.modular.navigation.core.NavigationConstants
 import com.mvi.modular.navigation.domain.model.Destination
 import com.mvi.modular.navigation.service.NavigationService
@@ -37,7 +38,7 @@ internal fun HomeScreenNavigation(
         //
         // Home screen
         //
-        composable(Destination.Home.ESim.route) {
+        composable(Destination.Home.Main.route) {
             val viewModel: HomeScreenViewModel = koinViewModel()
             HomeScreen(
                 state = viewModel.uiState,
@@ -55,8 +56,11 @@ internal fun HomeScreenNavigation(
         // Profile screen
         //
         composable(Destination.Home.Profile.route) {
-            //val viewModel: ProfileScreenViewModel = koinViewModel()
-            ProfileScreen()
+            val viewModel: ProfileScreenViewModel = koinViewModel()
+            ProfileScreen(
+                state = viewModel.uiState,
+                onEvent = viewModel::onEvent,
+            )
         }
     }
 }

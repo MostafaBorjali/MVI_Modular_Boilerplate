@@ -29,7 +29,7 @@ internal class DefaultDeeplinkManager : DeeplinkManager {
             DEEPLINK_HOME_PATH -> {
                 Deeplink(
                     destination = Destination.Home.Main,
-                    subDestination = Destination.Home.ESim,
+                    subDestination = Destination.Home.Main,
                     args = null,
                     needLogin = false,
                 )

@@ -12,8 +12,8 @@ internal sealed class HomeNavigationItem(
     @DrawableRes val icon: Int,
     @StringRes val title: Int
 ) {
-    data object MyESim : HomeNavigationItem(
-        Destination.Home.ESim,
+    data object Home : HomeNavigationItem(
+        Destination.Home.Main,
         drawables.ic_home,
         strings.home_title
     )
